@@ -32,3 +32,8 @@ the code retrieve the data, but also does calculations that adds the total vote 
   formula was used as earlier, but using the candidate_name variable and votes for each candidate instead.
 
 ## Election-Audit Summary:
+With some minor modification, this script could be used for any election. If the format of the csv containt election results follows the same
+formating as the one used for this anaylsis, the code show accurately print out results similarly for this election. That being said, some minor tweaks
+may be needed for it to work properly. An issue that comes to mind is the if else statement that finds the county with the most votes. Currently
+the way the code works is that it gets the name of the winning county by moving back an index in the counties dictionary. The reason this works in this
+analysis is that there are only three counties, and the winning county is the second to last index. If more counties were to be added, this part of the code may need to be adjusted. Other than that the code should work for every election. This code is very useful as it makes sorting through hundred of thousands rows efficienty and printing the results in a way that is easy to read.
