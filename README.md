@@ -8,9 +8,16 @@ the code retrieve the data, but also does calculations that adds the total vote 
 
 ## Election-Audit Results:
 
-- In this congressional election, there were **369,711 total votes cast.**
+- In this congressional election, there were **369,711 total votes cast.** This was found by using the reader function.
+  With this funciton it is possible to read through all the rows of the election results csv. Utilizing the reader function,
+  I made an empty variable to hold the total votes and used a loop to add every vote to the variable.
 - The votes for each county were **38,855 votes (10.5%) from Jefferson county, 306,055 votes (82.8%) from Denver county,
-  and 24,801 votes (6.7%) from Arapahoe county.**
+  and 24,801 votes (6.7%) from Arapahoe county.** This data was by looping through the election results csv. First I had to
+  make an empty variable called county_name. Within the loop that goes through all the rows, the line county_name = row[1]
+  adds the name of the county to the county name variable. To get all of the county names, an if statment was used that adds
+  the county name to a list called counties and puts those counties into a dictionary, adding the amount of votes as the
+  values for each county. To get the percentage of votes for each county, I used a formula that divides amount of votes for
+  each county by the total votes multiplied by 100.
 - The county with the most votes was **Denver, with 306,055 votes (82.8%)**
 - The votes for each candidate were **85,213 votes (23.0%) for Charles Casper Stockham, 272,892 votes (73.8%) for Diana DeGette,
   and 11,606 votes (3.1%) for Raymon Anthony Doane.**
