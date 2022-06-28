@@ -18,9 +18,17 @@ the code retrieve the data, but also does calculations that adds the total vote 
   the county name to a list called counties and puts those counties into a dictionary, adding the amount of votes as the
   values for each county. To get the percentage of votes for each county, I used a formula that divides amount of votes for
   each county by the total votes multiplied by 100.
-- The county with the most votes was **Denver, with 306,055 votes (82.8%)**
+- The county with the most votes was **Denver, with 306,055 votes (82.8%)** This was determined by using an if else statement within
+  a loop. What the if else statement does is adds the county and votes to variables that holds county with the most votes and the
+  amount of votes. First, if the county_count variable is higher than the county_vote variable (This one holds the highest vote).
+  The else part is important, as it tells the code to stop when it gets the highest vote count and pulls the name of the county
+  that has these votes.
 - The votes for each candidate were **85,213 votes (23.0%) for Charles Casper Stockham, 272,892 votes (73.8%) for Diana DeGette,
-  and 11,606 votes (3.1%) for Raymon Anthony Doane.**
-- The winner of the election is **Diana DeGette with 272,892 votes (73.8%)**
+  and 11,606 votes (3.1%) for Raymon Anthony Doane.** The candidates were found in a similar way as the counties. Rather than pulling
+  from the row that has counties in the loop, I used candidate_name = row[2]. An if statment was then used to add the candidates name to 
+  a list of all candidates.
+- The winner of the election is **Diana DeGette with 272,892 votes (73.8%)** To find the candidate with the most votes, an if statment
+  was used which adds the values of the candidates votes and candidate name to variables containting the correct candidate. The same percentage
+  formula was used as earlier, but using the candidate_name variable and votes for each candidate instead.
 
 ## Election-Audit Summary:
